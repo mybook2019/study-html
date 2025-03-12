@@ -1,0 +1,40 @@
+/* 1. 元素选择器（Type Selector） */
+h1 {
+    color: blue; /* 选择所有 <h1> 标签 */
+}
+
+/* 2. 类选择器（Class Selector） */
+.intro {
+    color: red; /* 选择所有 class="intro" 的元素 */
+}
+
+/* 3. ID 选择器（ID Selector） */
+#header {
+    font-size: 2em; /* 选择 id="header" 的元素 */
+}
+
+/* 4. 通配符选择器（Universal Selector） */
+* {
+    margin: 0;  /* 选择所有元素并清除默认外边距 */
+    padding: 0; /* 选择所有元素并清除默认内边距 */
+}
+
+/* 5. 后代选择器（Descendant Selector） */
+.container p {
+    color: green; /* 选择所有在 .container 元素内的 <p> 元素 */
+}
+
+/* 6. 子元素选择器（Child Selector） */
+.container > .box {
+    background-color: lightblue; /* 选择 .container 的直接子元素 .box */
+}
+
+/* 7. 相邻兄弟选择器（Adjacent Sibling Selector） */
+button + input {
+    border: 2px solid red; /* 选择紧接在 <button> 后面的第一个 <input> 元素 */
+}
+
+/* 8. 通用兄弟选择器（General Sibling Selector） */
+h1 ~ p {
+    font-style: italic; /* 选择所有在 <h1> 后面的 <p> 元素 */
+}

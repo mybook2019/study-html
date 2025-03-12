@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS定位示例</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* 静态定位 */
+        .static-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightblue;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        /* 相对定位 */
+        .relative-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgreen;
+            border: 1px solid #000;
+            position: relative;
+            top: 30px;   /* 向下偏移 30px */
+            left: 50px;  /* 向右偏移 50px */
+            margin: 10px;
+        }
+
+        /* 绝对定位 */
+        .container {
+            position: relative;
+            height: 300px;
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        .absolute-box {
+            width: 200px;
+            height: 100px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 50px;   /* 距离父元素顶部 50px */
+            left: 20px;  /* 距离父元素左边 20px */
+        }
+
+        /* 固定定位 */
+        .fixed-box {
+            width: 150px;
+            height: 100px;
+            background-color: lightgoldenrodyellow;
+            position: fixed;
+            top: 50px;   /* 距离浏览器顶部 50px */
+            right: 30px; /* 距离浏览器右侧 30px */
+            margin: 10px;
+        }
+
+        /* 粘性定位 */
+        .sticky-box {
+            width: 150px;
+            height: 50px;
+            background-color: lightseagreen;
+            position: -webkit-sticky; /* 针对Safari的兼容性 */
+            position: sticky;
+            top: 0; /* 滚动到距离顶部0时固定 */
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 静态定位 -->
+    <div class="static-box">静态定位 (Static)</div>
+
+    <!-- 相对定位 -->
+    <div class="relative-box">相对定位 (Relative)</div>
+
+    <!-- 绝对定位 -->
+    <div class="container">
+        <div class="absolute-box">绝对定位 (Absolute)</div>
+    </div>
+
+    <!-- 固定定位 -->
+    <div class="fixed-box">固定定位 (Fixed)</div>
+
+    <!-- 粘性定位 -->
+    <div class="sticky-box">粘性定位 (Sticky)</div>
+
+    <p>滚动页面查看效果...</p>
+    <div style="height: 2000px;"></div>
+
+</body>
+</html>
