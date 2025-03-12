@@ -1,0 +1,27 @@
+inline-block/* 归一化样式，去除默认的 margin 和 padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 主容器，使用 Flexbox 来布局 */
+.container {
+    display: flex;  /* 使用 flex 布局 */
+    justify-content: flex-start;  /* 水平排列 */
+    align-items: flex-start;  /* 垂直排列 */
+    gap: 20px;  /* 方块之间的间隔 */
+    margin: 20px;
+}
+
+/* 方块的样式 */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #FF6347;  /* 设置填充颜色 */
+    display: inline-block;  /* 使用 inline-block 使元素并排 */
+    text-align: center;
+    line-height: 100px; /* 使文字垂直居中 */
+    color: white;
+    font-size: 16px;
+}
