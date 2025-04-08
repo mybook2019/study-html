@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Auto Password Generator</title>
+</head>
+<body>
+    <h2>生成安全密码</h2>
+    <form>
+        <!-- 用户名输入框 -->
+        <label for="username">用户名：</label>
+        <input type="text" id="username" name="username" placeholder="输入用户名"><br><br>
+
+        <!-- 密码输入框 -->
+        <label for="password">密码：</label>
+        <input type="password" id="password" name="password" placeholder="密码将自动生成"><br><br>
+
+        <!-- 提交按钮 -->
+        <button type="submit">提交</button>
+    </form>
+
+    <script>
+        // 当页面加载时，触发 Chrome 的密码建议
+        window.onload = function () {
+            const passwordField = document.getElementById('password');
+            
+            // 强制 Chrome 生成一个建议的密码
+            passwordField.focus();
+        };
+    </script>
+</body>
+</html>
