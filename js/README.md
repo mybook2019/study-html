@@ -106,3 +106,10 @@ obj2.sayName();
 暂时不需要了解
 
 https://web.qianguyihao.com/04-JavaScript%E5%9F%BA%E7%A1%80/28-%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%88%9B%E5%BB%BA&%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0.html#%E5%88%9B%E5%BB%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%87%A0%E7%A7%8D%E6%96%B9%E6%B3%95
+
+
+
+# 对象总结
+js中的对象都是动态的，和随时都能够进行转换
+
+

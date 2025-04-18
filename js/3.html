@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!-- dom chapter -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            border: 6px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1" style="width: 200px;height: 100px;background-color: pink;"></div>
+
+    <script>
+        var box1 = document.getElementsByTagName("div")[0];
+
+        console.log(box1.style.backgroundColor);
+        console.log(box1.style.border);  //没有打印结果，因为这个属性不是行内样式
+        console.log(typeof box1.style);  //因为是对象，所以打印结果是Object
+        console.log(box1.style);         //打印结果是对象
+    </script>
+</body>
+</html>
